@@ -1,0 +1,18 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:svg="clr-namespace:Svg.Skia.Avalonia;assembly=Svg.Skia.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TestUI.MainWindow"
+       
+        Title="TestUI">
+  <Image>
+     <Image.RenderTransform>
+                            <RotateTransform Angle="{Binding Angle}"/>
+                        </Image.RenderTransform>
+    <Image.Source>
+      <svg:SvgImage Source="/Assets/Fan.svg"/>
+    </Image.Source>
+  </Image>
+</Window>
